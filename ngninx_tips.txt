@@ -1,0 +1,15 @@
+/*
+
+    Este archivo contiene instrucciones para aumentar el tamaño máximo de los archivos adjuntos en Nginx para Odoo.
+
+    Pasos:
+    1. Navegar a la carpeta etc/ngninx y buscar la carpeta que contiene el archivo odoo.conf (por ejemplo, sites-enabled).
+    2. Abrir el archivo odoo.conf.
+    3. Dentro del último bloque "server{}", agregar la línea:
+        "client_max_body_size 50M;" (o el tamaño máximo necesario).
+    4. Guardar el archivo.
+    5. Verificar que la configuración de Nginx no tenga errores con el siguiente comando:
+        "sudo nginx -t" -> Debe mostrar "syntax is ok" y "test is successful".
+    6. Si todo está correcto, ejecutar el siguiente comando:
+        "sudo systemctl restart nginx".
+*/
