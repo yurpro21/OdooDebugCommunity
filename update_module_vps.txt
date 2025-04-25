@@ -1,0 +1,13 @@
+/*
+
+    Este archivo contiene instrucciones para aumentar actualizar un modulo por servicio odoo en una servidor 
+    
+    
+    Pasos:
+    1. Navegar a la carpeta cd /etc/systemd/system/
+    2. abrir el archivo del servicio odoo con :  nano odoo.service 
+    3. modificar esta linea ExecStart=/opt/odoo/odoo-venv/bin/python3 /opt/odoo/odoo/odoo-bin -c /etc/odoo.conf agregando -d db -u nombre del modulo, guardar el archivo.
+    2. ejecutar sudo systemctl daemon-reload para recargar la config de los servicios.
+    4. reiniciar servicio de odoo service odoo restart
+
+*/
