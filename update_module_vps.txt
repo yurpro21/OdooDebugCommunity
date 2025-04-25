@@ -1,6 +1,6 @@
 /*
 
-    Este archivo contiene instrucciones para aumentar actualizar un modulo por servicio odoo en una servidor 
+    Este archivo contiene instrucciones para  actualizar un modulo por servicio odoo en una servidor 
     
     
     Pasos:
