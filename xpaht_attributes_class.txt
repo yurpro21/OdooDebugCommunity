@@ -1,0 +1,14 @@
+/*
+reemplazar una clase en xml 
+
+<xpath expr="//field[@name='email']" position="attributes">
+ <attribute name="string" value="Correo Electrónico"/>
+ <attribute name="required" value="1"/>
+</xpath>
+
+ agregar una clase CSS y quitar otra puedes hacerlo todo en una sola línea:
+
+<attribute name="class" add="nueva-clase" remove="vieja-clase"/>
+
+
+*/
